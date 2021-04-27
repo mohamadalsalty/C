@@ -9,9 +9,9 @@ int main(void)
     scanf("%i", &num1);
 
     int x[] = {1,2,3};
-    for(int i = 0; i < 3; i++)
+    for (int i = 0; i < 3; i++)
     {
-        if(x[i] == num1)
+        if (x[i] == num1)
         {
             printf("%d, after = %d", x[i], i+1);
         }
