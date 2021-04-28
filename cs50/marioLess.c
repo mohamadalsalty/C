@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include <cs50.h>
-
+#include <time.h>
 
 int main(void)
 {
+    //this is to calculate the spent time
+    clock_t begin = clock();
     //this is the int where we are going to get from the user
     int height;
     //this will ask the user while the condetion is not valid
@@ -30,4 +32,7 @@ int main(void)
         //this to print a new line after each row
         printf("\n");
     }
+    clock_t end = clock();
+    double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
+    printf("spent: %f", time_spent);
 }
